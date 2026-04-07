@@ -7,8 +7,19 @@
 &kscan {
     // Replace these comments with the GPIO pins in the matrix for the left side.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
-    // col-gpios
-    //     = <&pro_micro 0 GPIO_ACTIVE_HIGH>
-    //     , <&pro_micro 0 GPIO_ACTIVE_HIGH>
-    //     ;
+    row-gpios
+            = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // p0.24
+            , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // p1.00
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // p0.11
+            , <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // p1.04
+            , <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // p1.06
+            ;
+    col-gpios
+        = <&gpio0 2 GPIO_ACTIVE_HIGH>  // P0.02
+        , <&gpio1 15 GPIO_ACTIVE_HIGH> // P1.15
+        , <&gpio1 13 GPIO_ACTIVE_HIGH> // P1.13
+        , <&gpio1 11 GPIO_ACTIVE_HIGH> // P1.11
+        , <&gpio0 10 GPIO_ACTIVE_HIGH> // P0.10
+        , <&gpio0 9 GPIO_ACTIVE_HIGH>  // P0.09
+        ;
 };

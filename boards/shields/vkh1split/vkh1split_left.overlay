@@ -14,7 +14,7 @@
         , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // p1.04
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // p1.06
         ;
-    //// Only columnss 3 & 4 a working (0 based)
+    //// Only columns 3 & 4 are working (0 based)
     // col-gpios
     //     = <&gpio0 2 GPIO_ACTIVE_HIGH>  // P0.02
     //     , <&gpio1 15 GPIO_ACTIVE_HIGH> // P1.15
@@ -23,12 +23,13 @@
     //     , <&gpio0 10 GPIO_ACTIVE_HIGH> // P0.10
     //     , <&gpio0 9 GPIO_ACTIVE_HIGH>  // P0.09
     //     ;
+    //// Only columns 0, 3 & 4 are working (0 based)
     col-gpios
-        = <&pro_micro 19 GPIO_ACTIVE_HIGH>  // P0.02
+        = <&pro_micro 19 GPIO_ACTIVE_HIGH> // P0.02
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // P1.15
         , <&pro_micro 15 GPIO_ACTIVE_HIGH> // P1.13
         , <&pro_micro 14 GPIO_ACTIVE_HIGH> // P1.11
         , <&pro_micro 16 GPIO_ACTIVE_HIGH> // P0.10
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH>  // P0.09
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH> // P0.09
         ;
 };

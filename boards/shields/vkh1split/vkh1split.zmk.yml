@@ -5,8 +5,7 @@
 file_format: "1"
 id: vkh1split
 name: vkh1split
-type: board
-arch: arm
+type: shield
 
 # Set this to a URL that documents the keyboard.
 url: https://example.com
@@ -16,15 +15,9 @@ url: https://example.com
 features:
   - keys
 
-outputs:
-  - usb
-  - ble
+requires:
+  - pro_micro
 
 siblings:
   - vkh1split_left
   - vkh1split_right
-# If your board has multiple revisions in its board.yml, create a matching list here:
-# revisions:
-#   - 2.0.0
-#   - 1.0.0
-# default_revision: 2.0.0

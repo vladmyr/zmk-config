@@ -1,0 +1,5 @@
+config SHIELD_VKH1SPLIT_LEFT
+    def_bool $(shields_list_contains,vkh1split_left)
+
+config SHIELD_VKH1SPLIT_RIGHT
+    def_bool $(shields_list_contains,vkh1split_right)

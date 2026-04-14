@@ -38,4 +38,3 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH> // P0.02
         ;
 };
-tgb

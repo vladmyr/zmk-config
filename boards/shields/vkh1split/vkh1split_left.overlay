@@ -23,7 +23,6 @@
     //     , <&gpio0 10 GPIO_ACTIVE_HIGH> // P0.10
     //     , <&gpio0 9 GPIO_ACTIVE_HIGH>  // P0.09
     //     ;
-    //// Only columns 0, 3 & 4 are working (0 based)
     col-gpios
         = <&pro_micro 19 GPIO_ACTIVE_HIGH> // P0.02
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // P1.15

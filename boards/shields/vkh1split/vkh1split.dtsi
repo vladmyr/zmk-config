@@ -41,32 +41,13 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH> // P0.10
             , <&gpio0 9 GPIO_ACTIVE_HIGH>  // P0.09
             ;
-
-        // QMK configuration:
-        // "matrix_pins": {
-        //     "cols": [
-        //         "F6",  // 0 -> P0.02
-        //         "F7",  // 1 -> P1.15
-        //         "B1",  // 2 -> P1.13
-        //         "B3",  // 3 -> P1.11
-        //         "B2",  // 4 -> P0.10
-        //         "B6"   // 5 -> P0.09
-        //     ],
-        //     "rows": [
-        //         "C6",  // 0 -> p0.24
-        //         "D7",  // 1 -> p1.00
-        //         "E6",  // 2 -> p0.11
-        //         "B4",  // 3 -> p1.04
-        //         "B5"   // 4 -> p1.06
-        //     ]
-        // }
     };
 
     default_transform: default_transform {
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
         compatible = "zmk,matrix-transform";
-        columns = <6>;
+        columns = <12>;
         rows = <5>;
 
         map = <

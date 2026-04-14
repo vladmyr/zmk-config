@@ -6,7 +6,7 @@
 
 &default_transform {
     // Set this to the number of columns on the left side.
-    col-offset = <0>;
+    col-offset = <5>;
 };
 
 &kscan {
@@ -30,11 +30,12 @@
     //     ;
     //// Only columns 0, 3 & 4 are working (0 based)
     col-gpios
-        = <&pro_micro 19 GPIO_ACTIVE_HIGH> // P0.02
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH> // P1.15
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH> // P1.13
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH> // P1.11
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH> // P0.09
         , <&pro_micro 16 GPIO_ACTIVE_HIGH> // P0.10
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH> // P0.09
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH> // P1.11
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH> // P1.13
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH> // P1.15
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH> // P0.02
         ;
 };
+tgb

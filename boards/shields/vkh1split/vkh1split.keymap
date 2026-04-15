@@ -15,24 +15,22 @@
         default_layer {
             // https://github.com/zmkfirmware/zmk/blob/main/app/boards/shields/lily58/lily58.keymap
             bindings = <
-                &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4&kp N5              &kp N6  &kp N7 &kp N8    &kp N9    &kp N0    &kp BSPC
-                &kp TAB   &kp Q     &kp W    &kp E    &kp R &kp T               &kp Y   &kp U  &kp I     &kp O     &kp P     &kp BSLH
-                &kp CAPS  &kp A     &kp S    &kp D    &kp F &kp G               &kp H   &kp J  &kp K     &kp L     &kp SEMI  &kp SQT
-                &kp LSHFT &kp Z     &kp X    &kp C    &kp V &kp B               &kp N   &kp M  &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                &trans    &kp LCTRL &kp LGUI &kp LALT &mo 1 &kp SPACE           &kp RET &mo 1  &kp RALT  &kp PG_UP &kp PG_DN &trans
+                &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4&kp N5                  &kp N6  &kp N7 &kp N8    &kp N9    &kp N0    &kp BSPC
+                &kp TAB   &kp Q     &kp W    &kp E    &kp R &kp T                   &kp Y   &kp U  &kp I     &kp O     &kp P     &kp BSLH
+                &kp CAPS  &kp A     &kp S    &kp D    &kp F &kp G                   &kp H   &kp J  &kp K     &kp L     &kp SEMI  &kp SQT
+                &kp LSHFT &kp Z     &kp X    &kp C    &kp V &kp B                   &kp N   &kp M  &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
+                          &kp LCTRL &kp LGUI &kp LALT &mo 1 &kp SPACE               &kp RET &mo 1  &kp RALT  &kp PG_UP &kp PG_DN
             >;
         };
 
         upper_layer {
             bindings = <
-                &kp GRAVE &kp TILDE &trans &trans &kp C_BRI_DEC &kp C_BRI_INC   &trans &trans &trans &trans &trans &trans
-                &trans    &trans    &trans &trans &trans        &trans          &trans &trans &trans &trans &trans &trans
-                &trans    &trans    &trans &trans &trans        &trans          &trans &trans &trans &trans &trans &trans
-                &trans    &trans    &trans &trans &trans        &trans          &trans &trans &trans &trans &trans &trans
-                &trans    &trans    &trans &trans &trans        &trans          &trans &trans &trans &trans &trans &trans
-            >;
+                &kp GRAVE &kp TILDE &trans   &trans   &kp C_BRI_DEC &kp C_BRI_INC   &kp C_MUTE &C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE &kp MINUS &kp EQUAL
+                &kp TAB   &kp F1    &kp F2   &kp F3   &kp F4        &trans          &trans     &trans    &kp UP       &trans           &kp LBKT  &kp RBKT
+                &kp CAPS  &kp F5    &kp F6   &kp F7   &kp F8        &trans          &trans     &kp LEFT  &kp DOWN     &kp RIGHT        &kp LBRC  &kp RBRC
+                &kp LSHFT &kp F9    &kp F10  &kp F11  &kp F12       &trans          &trans     &kp HOME  &kp END      &trans           &trans    &kp RSHFT
+                          &kp LCTRL &kp LGUI &kp LALT &trans        &trans          &trans     &trans    &kp DEL      &trans           &trans
+               >;
         };
     };
 };
-
-
